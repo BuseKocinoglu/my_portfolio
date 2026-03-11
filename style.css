@@ -214,11 +214,11 @@ section {
 .text-animation {
   font-size: 34px;
   font-weight: 600;
-  min-width: 280px;
 }
 
-.text-animation span {
+.text-animation span{
   position: relative;
+  display: inline-block;
 }
 
 .text-animation span::before {
@@ -257,17 +257,17 @@ section {
 
   41%,
   60% {
-    content: "Full-Stack Developer";
+    content: "Web Developer";
   }
 
   61%,
   80% {
-    content: "Cyber Security Resarcher";
+    content: "Cyber Security Researcher";
   }
 
   81%,
   100% {
-    content: "Software Tester";
+    content: "Machine Learning Enthusiast";
   }
 }
 @keyframes typing {
@@ -536,7 +536,7 @@ section {
   border: 3px solid var(--main-color);
   box-shadow: 0 0 50px var(--main-color);
   transform: scale(1.1);
-  animation: lighting is infinite alternate;
+  animation: lighting 1s infinite alternate;
 }
 
 @keyframes lighting {
@@ -860,8 +860,8 @@ input[type="number"] {
 
     min-height: 550px;
     max-width: 450px;
-    background-color: rgba(0, 0, 0, 0.7);
-    border: 3px solid rgba(238, 238, 238, 0.2);
+    background-color: #B9B4C7;
+    border: 3px solid #9180bd;
     border-radius: 2rem;
     margin: 0 2rem;
     padding: 30px 60px;
@@ -879,6 +879,17 @@ input[type="number"] {
     border: 3px solid var(--main-color);
     box-shadow: 0 0 50px var(--main-color);
   }
+  .wrapper{
+  grid-template-columns: 1fr;
+  gap: 6rem;
+}
+
+.experience-item{
+  width: 90%;
+  margin: 0 auto;
+  padding: 40px 30px;
+}
+
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .navbar a {
@@ -931,7 +942,6 @@ input[type="number"] {
     font-size: 2.5rem;
   }
 }
-
 /* MEDIA QUERIES END */
 
 /*574,
