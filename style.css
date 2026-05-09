@@ -499,7 +499,7 @@ section {
     min-height: 550px;
     max-width: 450px;
     background-color: #B9B4C7;
-    border: 3px solid #352F44;
+    border: 3px solid #9083af;
     border-radius: 2rem;
     margin: 0 2rem;
     padding: 30px 60px;
@@ -963,6 +963,74 @@ input[type="number"] {
 }
 /* MEDIA QUERIES END */
 
+/* Modal Genel Arka Planı (Blur efekti için) */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+}
+
+/* Modal Kutusu */
+.modal-content {
+    background-color: var(--bg-color);
+    margin: 15% auto;
+    padding: 3rem;
+    border: 2px solid var(--main-color);
+    width: 350px;
+    border-radius: 3rem;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.modal-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.modal-content p {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 1.2rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    background: var(--second-bg-color);
+    color: white;
+    border: 1px solid var(--main-color);
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    right: 2rem;
+    top: 1.5rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--text-color);
+}
+#cvCode::placeholder {
+    color: rgba(255, 255, 255, 0.7); 
+    opacity: 1; 
+}
+
+#cvCode::-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#cvCode::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
 /*574,
  575 - 767,
   768 - 991,
